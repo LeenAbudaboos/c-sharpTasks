@@ -13,35 +13,99 @@ namespace _2024_6_30
         static void Main(string[] args)
         {
             //Q1
+            int[] numbers = new int[10];
 
-            
+            Console.WriteLine("Enter 10 numbers:");
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write($"Number-{i + 1}: ");
+                numbers[i] = Convert.ToInt32(Console.ReadLine());
+            }
+             
+            var (sum, average) = SumAndAverage(numbers);
 
+
+            Console.WriteLine($"The sum of 10 numbers is: {sum}");
+            Console.WriteLine($"The Average is: {average:F6}");
+
+            Console.Write("Input number of terms: ");
+            int terms = Convert.ToInt32(Console.ReadLine());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            DisplayCubes(terms);
+
+            Console.Write("Input number of terms: ");
+            int term = Convert.ToInt32(Console.ReadLine());
+            CalculateAgeInDays(term);
+
+
+            //Q3
+            int[] years = { 1763, 1972, 1925, 1916, 1984, 1124, 1950, 2020 };
+            int[] newYears=GetYears(years);
+            Console.WriteLine("years greater that 1950: ");
+            foreach(int year in newYears)
+            {
+                Console.WriteLine(year);
+            }
+           
+        }
+
+        //Q1
+        static (int, double) SumAndAverage(int[] numbers)
+        {
+            int sum = 0;
+
+            foreach (int num in numbers)
+            {
+                sum += num;
+            }
+
+            double average = (double)sum / numbers.Length;
+
+            return (sum, average);
+        }
+
+        //Q2:
+
+        static void DisplayCubes(int terms)
+        {
+            for (int i = 1; i <= terms; i++)
+            {
+                int cube = i * i * i;
+                Console.WriteLine($"Number is : {i} and cube of the {i} is : {cube}");
+            }
 
         }
-        public static string ReturnSumAndAverage(params double[] grades)
-        {
-            double sum = 0;
-            foreach (var grade in grades)
-            {
-                sum += grade;
-            };
-            return $"the sum is: {sum} and the avarege is {sum / grades.Length}";
-        }
 
-
-        public static int GetYears(int[] years)
+        //Q3
+        static int[] GetYears(int[] years)
         {
-            foreach (int year in years)
+            List<int> otherYears =new List<int>();
+            for (int i= 0;i<years.Length;i++)
             {
-                if (year > 1950)
+                if (years[i] > 1950)
                 {
-                    Console.WriteLine(year);
+                    otherYears.Add(years[i]);
                 }
             }
-            return 0;
+            return otherYears.ToArray();
         }
 
-
+        //Q4
         public static int CalculateAgeInDays(int years)
         {
             if (years <= 0)
@@ -56,102 +120,8 @@ namespace _2024_6_30
             return 0;
         }
 
-    }
 
-
-
-    //Q5
-
-    public class Person
-    {
-        int age;
-        string gender;
-        string name;
-        string email;
-        string id;
-        string phone;
-
-        public int Age
-        {
-            get { return age; }
-            set
-            {
-                if (value < 18 || value > 60)
-                    throw new ArgumentOutOfRangeException("Age must be between 18 and 60.");
-                age = value;
-            }
-        }
-
-        public string Gender
-        {
-            get { return gender; }
-            set
-            {
-                if (value != "Male" && value != "Female")
-                    throw new ArgumentException("Gender must be either 'Male' or 'Female'.");
-                gender = value;
-            }
-        }
-
-        public string Name
-        {
-            get { return name; }
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                    throw new ArgumentException("Name cannot be empty.");
-                name = value;
-            }
-        }
-
-        public string Email
-        {
-            get { return email; }
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                    throw new ArgumentException("Email cannot be empty.");
-                email = value;
-            }
-        }
-
-        public string ID
-        {
-            get { return id; }
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                    throw new ArgumentException("ID cannot be empty.");
-                id = value;
-            }
-        }
-
-        public string Phone
-        {
-            get { return phone; }
-            set
-            {
-                if (!IsValidPhone(value))
-                    throw new ArgumentException("Phone number must start with 077, 078, or 079.");
-                phone = value;
-            }
-        }
-
-        public Person()
-        {
-            // Default values
-            age = 18;
-            gender = "Male";
-            name = "Default Name";
-            email = "example@example.com";
-            id = "DefaultID";
-            phone = "0770000000";
-        }
-
-        private bool IsValidPhone(string phone)
-        {
-            return Regex.IsMatch(phone, @"^(077|078|079)\d{7}$");
-        }
+       
 
 
     } 

@@ -1,0 +1,7 @@
+C:\Users\Orange\Desktop\c-sharpTasks\c-sharpTasks\2024-7-1\bin\Debug\2024-7-1.exe.config
+C:\Users\Orange\Desktop\c-sharpTasks\c-sharpTasks\2024-7-1\bin\Debug\2024-7-1.exe
+C:\Users\Orange\Desktop\c-sharpTasks\c-sharpTasks\2024-7-1\bin\Debug\2024-7-1.pdb
+C:\Users\Orange\Desktop\c-sharpTasks\c-sharpTasks\2024-7-1\obj\Debug\2024-7-1.csproj.AssemblyReference.cache
+C:\Users\Orange\Desktop\c-sharpTasks\c-sharpTasks\2024-7-1\obj\Debug\2024-7-1.csproj.CoreCompileInputs.cache
+C:\Users\Orange\Desktop\c-sharpTasks\c-sharpTasks\2024-7-1\obj\Debug\2024-7-1.exe
+C:\Users\Orange\Desktop\c-sharpTasks\c-sharpTasks\2024-7-1\obj\Debug\2024-7-1.pdb
