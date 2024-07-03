@@ -12,17 +12,17 @@ namespace _2024_7_1
 
         public class Car
         {
-            // Fields to store car's details
+            
             private string make;
             private int year;
             private string type;
-            private decimal price;
+            private double price;
             private string model;
             private string palletNo;
             private string color;
             private bool Running;
 
-            public Car(string make, int year, string type, decimal price, string model, string palletNo, string color)
+            public Car(string make, int year, string type, double price, string model, string palletNo, string color)
             {
                 this.make = make;
                 this.year = year;
@@ -52,7 +52,7 @@ namespace _2024_7_1
                 set { type = value; }
             }
 
-            public decimal Price
+            public double Price
             {
                 get { return price; }
                 set { price = value; }
@@ -80,22 +80,18 @@ namespace _2024_7_1
             // Method to start the engine
             public void StartEngine()
             {
-                if (!Running)
-                {
-                    Running = true;
-                    Console.WriteLine("Engine started ");
-                }
+               
+                   Console.WriteLine("the car started ");
+                
                 
             }
 
           
             public void StopEngine()
             {
-                if (Running)
-                {
-                    Running = false;
-                    Console.WriteLine("Engine stopped.");
-                }
+               
+                    Console.WriteLine("the car stopped.");
+                
                 
             }
 
@@ -107,7 +103,7 @@ namespace _2024_7_1
 
             public class BMW : Car
             {
-                public BMW(string make, int year, string type, decimal price, string model, string palletNo, string color)
+                public BMW(string make, int year, string type, double price, string model, string palletNo, string color)
                 : base(make, year, type, price, model, palletNo, color)
                 {
                 }
@@ -117,15 +113,19 @@ namespace _2024_7_1
         }
             static void Main(string[] args)
         {
-            // Create a new BMW object
+            Car car =new Car("h", 2020 ,"js", 9990, "X", "zzzz", "black");
+
+            Console.WriteLine(car.informationCar());
+            car.StartEngine();
+            car.StopEngine();
+
             BMW bmw = new BMW("BMW", 2023, "hnl", 6600, "X", "zzzz", "red");
 
             // Display car details
             Console.WriteLine(bmw.informationCar());
 
-            // Start and stop the engine
-            bmw.StartEngine();
-            bmw.StopEngine();
+           
+           
         }
     }
 }

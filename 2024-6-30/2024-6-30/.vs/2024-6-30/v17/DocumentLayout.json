@@ -3,8 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\c-sharpTasks\\c-sharpTasks\\2024-6-30\\2024-6-30\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2173E36F-F665-49C6-9FF1-5D804CEB6867}|2024-6-30.csproj|c:\\users\\orange\\desktop\\c-sharptasks\\c-sharptasks\\2024-6-30\\2024-6-30\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2173E36F-F665-49C6-9FF1-5D804CEB6867}|2024-6-30.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4AD8A978-662C-45D6-9B9F-B0A56D463B63}|..\\..\\2024-7-2\\2024-7-2.csproj|c:\\users\\orange\\desktop\\c-sharptasks\\c-sharptasks\\2024-7-2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,13 +19,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\c-sharpTasks\\c-sharpTasks\\2024-6-30\\2024-6-30\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\c-sharpTasks\\c-sharpTasks\\2024-6-30\\2024-6-30\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAAABsAAABCAAAA",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\c-sharpTasks\\c-sharpTasks\\2024-7-2\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\2024-7-2\\Program.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\c-sharpTasks\\c-sharpTasks\\2024-7-2\\Program.cs",
+              "RelativeToolTip": "..\\..\\2024-7-2\\Program.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAADwvyMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T17:54:03.966Z",
+              "WhenOpened": "2024-07-03T04:44:03.995Z",
               "EditorCaption": ""
             }
           ]

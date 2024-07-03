@@ -12,7 +12,7 @@ namespace _2024_6_30
     {
         static void Main(string[] args)
         {
-            //Q1
+            
             int[] numbers = new int[10];
 
             Console.WriteLine("Enter 10 numbers:");
@@ -30,19 +30,6 @@ namespace _2024_6_30
 
             Console.Write("Input number of terms: ");
             int terms = Convert.ToInt32(Console.ReadLine());
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
